@@ -8,7 +8,7 @@ function App() {
 
   console.log(isLoading, setIsLoading);
   const getMovies = async () => {
-    const response = await fetch("https://boot.hyenon.r-e.kr");
+    const response = await fetch("https://hyenon.r-e.kr/movies");
     const json = await response.json();
     console.log(json);
     setMovies(json.movies);
